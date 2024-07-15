@@ -32,11 +32,13 @@ export default defineConfig({
     commonjsOptions: {
       transformMixedEsModules: true,
     },
+
     lib: {
       // Could also be a dictionary or array of multiple entry points.
       entry: 'src/index.ts',
       name: 'fuse',
       fileName: 'index',
+
       // Change this to the formats you want to support.
       // Don't forget to update your package.json as well.
       formats: ['es', 'cjs'],
@@ -46,4 +48,6 @@ export default defineConfig({
       external: ['react', 'react-dom', 'react/jsx-runtime'],
     },
   },
+
+
 });
